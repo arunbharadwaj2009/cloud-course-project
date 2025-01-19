@@ -4,8 +4,17 @@
 #
 # See run.sh for more in-depth comments on what each target does.
 
+.PHONY: run
+
 build:
 	bash run.sh build
+
+run:
+	bash run.sh run
+
+run-mock:
+	bash run.sh run
+
 
 clean:
 	bash run.sh clean
