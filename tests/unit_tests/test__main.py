@@ -60,6 +60,7 @@ def test_list_files_with_pagination(client: TestClient):
 
 
 def test_get_file_metadata(client: TestClient):
+  
     # Upload a file
     client.put(
         f"/files/{TEST_FILE_PATH}",
